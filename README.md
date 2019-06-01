@@ -21,20 +21,43 @@
 ```
 composer require basry/larabackup
 ```
+### For Laravel < 5.5
+After updating composer, add the ServiceProvider to the providers array in config/app.php
+````
+Basry\Larabackup\LarabackupServiceProvider::class,
+````
 ## Usage
-
+Using Facade
+```
+use Basry\Larabackup\Facades\Larabackup;
+```
 #### Backup
 ```
 Larabackup::backup(); // Auto Naming
 ```
 Or
 ```
-Larabackup::backup('Dump Name');
+Larabackup::backup($dumpName);
 ```
 
 #### Restore
 ```
-Larabackup::restore($dumpName);
+Larabackup::restore($dumpFullName);
+```
+
+### Artisan
+You can backup, restore, and list database dumps.
+#### Backup
+```
+php artisan larabackup:backup
+```
+#### Restore
+```
+php artisan larabackup:restore dumpFullName
+```
+#### List Dumps
+```
+php artisan larabackup:list
 ```
 ## License
 
