@@ -1,0 +1,32 @@
+{
+    "name": "basry/larabackup",
+    "description": "Simple Laravel Database Backup Solution",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ashraf Basry",
+            "email": "ashrafmn2008@gmail.com"
+        }
+    ],
+    "require": {
+        "ifsnop/mysqldump-php": "^2.7",
+        "illuminate/console": "^5.6",
+        "illuminate/support": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Basry\\Larabackup\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Basry\\Larabackup\\LarabackupServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
