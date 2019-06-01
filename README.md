@@ -1,4 +1,4 @@
-<p align="center">### Laradump</p>
+<h2 align="center">Laradump</h2>
 <p align="center">Simple Laravel Database Backup Solution</p>
 <p align="center">
 	<a href="https://packagist.org/packages/basry/larabackup">
