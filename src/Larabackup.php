@@ -66,7 +66,7 @@ class Larabackup implements DatabaseBackup
 		if(!$this->storage->exists($path)) {
             $this->storage->makeDirectory($path, 0777, true);
         }
-        $backupFileName = date('Y-m-d|H:i:s') . '|' . $backupName . '.sql';
+        $backupFileName = time() . '-' . $backupName . '.sql';
         $dump = new Mysqldump('mysql:host=' . $this->config['host'] . ';dbname=' . $this->config['database'], $this->config['username'], $this->config['password']);
         $dump->start($this->realPath() . '/' . $backupFileName);
         return $backupFileName;
@@ -122,12 +122,12 @@ class Larabackup implements DatabaseBackup
         $dumps = [];
         foreach ($files as $file) {
             $file = basename($file, '.sql');
-            $exp = explode('|', $file);
+            $exp = explode('-', $file);
             $dumps[] = [
                 'id'   => $file,
-                'name' => $exp[2],
-                'date' => $exp[0],
-                'time' => $exp[1],
+                'name' => $exp[1],
+                'date' => date('Y-m-d', $exp[0]),
+                'time' => date('H:i:s', $exp[0]),
             ];
         }
         return $dumps;

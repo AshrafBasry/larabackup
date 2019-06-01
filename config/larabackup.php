@@ -9,5 +9,13 @@ return [
 	|
 	*/
 	'disk' => 'local',
+
+	/*
+	|-------------------------------
+	| Path
+	|-------------------------------
+	| Default Backup Storage Path
+	|
+	*/
 	'path' => 'database/dumps',
 ];
