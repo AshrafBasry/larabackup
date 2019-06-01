@@ -1,8 +1,16 @@
 <p align="center">### Laradump</p>
 <p align="center">Simple Laravel Database Backup Solution</p>
 <p align="center">
-[![Latest Stable Version](https://poser.pugx.org/basry/vault/v/stable)](https://packagist.org/packages/basry/vault)
-[![Total Downloads](https://poser.pugx.org/basry/vault/downloads)](https://packagist.org/packages/basry/vault)
-[![Latest Unstable Version](https://poser.pugx.org/basry/vault/v/unstable)](https://packagist.org/packages/basry/vault)
-[![License](https://poser.pugx.org/basry/vault/license)](https://packagist.org/packages/basry/vault)
+	<a href="https://packagist.org/packages/basry/larabackup">
+		<img src="https://poser.pugx.org/basry/larabackup/v/stable" alt="Latest Stable Version">
+	</a>
+	<a href="https://packagist.org/packages/basry/larabackup">
+		<img src="https://poser.pugx.org/basry/larabackup/downloads" alt="Total Downloads">
+	</a>
+	<a href="https://packagist.org/packages/basry/larabackup">
+		<img src="https://poser.pugx.org/basry/larabackup/v/unstable" alt="Latest Unstable Version">
+	</a>
+	<a href="https://packagist.org/packages/basry/larabackup">
+		<img src="https://poser.pugx.org/basry/larabackup/license" alt="License">
+	</a>
 </p>
