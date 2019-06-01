@@ -2,6 +2,10 @@
     "name": "basry/larabackup",
     "description": "Simple Laravel Database Backup Solution",
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/basry/larabackup/issues",
+        "source": "https://github.com/basry/larabackup"
+    },
     "authors": [
         {
             "name": "Ashraf Basry",
