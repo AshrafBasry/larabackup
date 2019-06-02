@@ -77,7 +77,7 @@ You can override any of the default configs
 Larabackup::connection($connection)->backup();
 ```
 ```
-php artisan larabackup:backup --database=DatabaseName
+php artisan larabackup:backup --database=DatabaseConnection
 ```
 #### Storage Disk
 ```
