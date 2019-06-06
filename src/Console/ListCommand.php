@@ -47,7 +47,7 @@ class ListCommand extends Command
         $dumps = $larabackup->listDumps();
 
         if (count($dumps) > 0) {
-            $header = ['ID', 'Name', 'Date', 'Time'];
+            $header = ['ID', 'Name', 'Size', 'Date', 'Time'];
             $this->table($header, $dumps);
             return;
         }
